@@ -1,6 +1,6 @@
 "use strict"; 
 console.log("hi BookCtrl");
-app.controller("BookCtrl", ($scope, BookFactory) => {
+app.controller("BookCtrl", function($scope, BookFactory) {
 
 	BookFactory.getGuides()
 	.then( (guideCollection) => {

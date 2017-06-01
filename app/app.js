@@ -5,7 +5,7 @@ var app = angular.module("WorldTravelApp", ["ngRoute"]);
 app.config( ($routeProvider) => {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'partials/guide-list.html'
-		// controller: 'BookCtrl'
+		templateUrl: 'partials/guide-list.html',
+		controller: 'BookCtrl'
 	});
 });

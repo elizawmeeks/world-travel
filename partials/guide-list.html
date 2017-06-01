@@ -1,14 +1,14 @@
 <article class="product-list">
 
   <header><h1>List of Guides</h1></header>
-<!-- 
+
   <div>
   	<input type="text" ng-model="query" placeholder="search" />
   </div>
- -->
+
   <section>
 
-    <div ng-repeat="item in books">
+    <div ng-repeat="item in books | filter: query">
       <strong>{{ item.title }}</strong>
       <p>Type: {{ item.type }}</p>
       <p>${{ item.price }}</p>
